@@ -1,8 +1,9 @@
-@charset "UTF-8"
+@charset "UTF-8";
 
-body{
+body {
+
     background-color: white;
-    color: (0,0,0,1);
+    color: rgba(0,0,0,1);
 }
 
 p {
