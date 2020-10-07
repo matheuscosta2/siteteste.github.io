@@ -1,48 +1,54 @@
 /*escolha do grupo idiomático*/
 @charset "UTF-8";
-/*formatação do corpo*/
+
+/*formatação do corpo tag <body>*/
 body {
 
     background-color: #dddddd;
     color: rgba(0,0,0,1);
 }
 
+/*formatacao da tag <div> id=interface*/
 div#interface {
     width: 900px;
     background-color: #ffffff;
-    margin: -20px auto 0px auto;
+    margin: -10px auto 0px auto;
     box-shadow: 0px 0px 10px rgba(0,0,0,.4);
     padding: 10px;
 }
 
-/*formatação dos textos dentro tag <p>*/
+/*formatacao dos textos dentro tag <p>*/
 p {
     text-align: justify;
     text-indent: 50px;
 }
-/*formatação da imagem do header dentro da tag */
+
+/*formatacao do header id cabecalho tag <img> id=icone*/
 header#cabecalho img#icone {
     position: absolute;
-    left: 750px;
-    top: 50px;
+    left: 960px;
+    top: 40px;
 }
 
+/*formatação do header id=cabecalho*/
 header#cabecalho {
-
-
+    border-bottom: 1px #606060 solid;
 }
 
+/*formatacao da tag <figure> classe foto-legenda*/
 figure.foto-legenda {
     position: relative;
     border: 8px solid white;
     box-shadow: 1px 1px 4px black;
 }
-/*formatação da imagem, altura e largura*/
+
+/*formatacao da tag <figure> classe foto legenda tag <img>*/
 figure.foto-legenda img {
     width: 100%;
     height: 100%;
 }
-/* formatação da legenda da figura através do figcaption*/
+
+/* formatacao da tag <figure> classe foto-legenda tag <figcaption>*/
 figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
@@ -55,25 +61,27 @@ figure.foto-legenda figcaption {
     box-sizing: border-box;
     transition: opacity 1s;
 }
-/*formatação para fade in fade out da legenda na imagem classe foto-legenda*/
+
+/*formatacao da tag <figure> classe foto-legenda efeito hover na tag <figcaption>*/
 figure.foto-legenda:hover figcaption {
     opacity: 1;
 }
 
-/*formatação do menu*/
+/*formatacao da tag <nav> id=menu*/
 nav#menu {
     display: block;
 }
-/*formatação da unordered list do menu*/
-nav#menu ul{
 
+/*formatação da tag <nav> id=menu tag <ul>*/
+nav#menu ul{
     list-style: none;
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 300px;
+    left: 400px;
 }
-/*formatação dos itens da lista com tag li*/
+
+/*formatação da tag <nav> id=menu tag <li>*/
 nav#menu li {
     display: inline-block;
     background-color: #dddddd;
@@ -82,19 +90,23 @@ nav#menu li {
     transition: 1s;
 }
 
+/*formatacao da tag <nav> id=menu tag <li> efeito hover*/ 
 nav#menu li:hover {
     background-color: #606060;
 }
-/*formatação de todo titulo do menu nav com a tag h1*/
+
+/*formatacao da tag <nav> id=menu tag <h1>*/
 nav#menu h1 {
     display: none;
 }
-/*formatação do meno com tag nav - todo link do menu nav*/
+
+/*formatacao da tag <nav> id=menu tag <a>*/
 nav#menu a {
     color: black;
     text-decoration: none;
 }
-/*fade in fade out do menu*/
+
+/*formatacao da tag <nav> id=menu tag <a> efeito hover*/
 nav#menu a:hover {
     color: white;
     text-decoration: underline;
