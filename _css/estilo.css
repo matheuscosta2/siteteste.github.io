@@ -1,11 +1,12 @@
+/*escolha do grupo idiomático*/
 @charset "UTF-8";
-
+/*formatação do corpo*/
 body {
 
     background-color: white;
     color: rgba(0,0,0,1);
 }
-
+/*formatação dos textos dentro tag <p>*/
 p {
     text-align: justify;
     text-indent: 50px;
@@ -16,12 +17,12 @@ figure.foto-legenda {
     border: 8px solid white;
     box-shadow: 1px 1px 4px black;
 }
-
+/*formatação da imagem, altura e largura*/
 figure.foto-legenda img {
     width: 100%;
     height: 100%;
 }
-
+/* formatação da legenda da figura através do figcaption*/
 figure.foto-legenda figcaption {
     opacity: 0;
     position: absolute;
@@ -34,7 +35,32 @@ figure.foto-legenda figcaption {
     box-sizing: border-box;
     transition: opacity 1s;
 }
-
+/*formatação para fade in fade out da legenda na imagem classe foto-legenda*/
 figure.foto-legenda:hover figcaption {
     opacity: 1;
+}
+
+/*formatação do menu*/
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav#menu h1 {
+    display: none;
 }
