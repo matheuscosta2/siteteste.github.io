@@ -231,14 +231,14 @@ aside#lateral {
   margin-top: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
-
+/*formatacao da tag <aside> id=lateral fonte h1*/
 aside#lateral h1 {
     font-family: 'FonteLogo', sans-serif;
     font-size: 20pt;
     color: #606060;
     margin-top: 0px;
 }
-
+/*formatacao da tag <aside> id=lateral fonte h2*/
 aside#lateral h2 {
     background-color: #606060;
     font-size: 13pt;
@@ -250,6 +250,7 @@ footer#rodape {
   clear: both;
   border-top: 1px solid #606060;
 }
+/*formtacao da tag <footer> id=rodape* tag <p>*/
 footer#rodape p {
   text-align: center;
 }
