@@ -1,1 +1,1 @@
-# website_teste_html_css_js
+Site de teste para estudas programação Web - Google Glass site.
