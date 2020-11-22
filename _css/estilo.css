@@ -221,6 +221,24 @@ table#tabelaspec caption span {
   font-size: 8pt;
   margin-top: 10px;
 }
+iframe#filme01 {
+  display: block;
+  position: relative;
+  left: 500;
+  top: 100;
+  width: 345px;
+  margin: auto;
+  padding: 3px;
+}
+iframe#filme02 {
+  display: block;
+  position: relative;
+  left: 500;
+  top: 100;
+  width: 480px;
+  margin: auto;
+  padding: 3px;
+}
 /*formtacao da tag <aside> id=lateral*/
 aside#lateral {
   display: block;
