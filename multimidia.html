@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>Tudo Sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" href="_css/media.css">
 </head>
 <script language="javascript" src="_javascript/funcoes.js"></script>
 
@@ -16,7 +17,7 @@
                 <h2>A revolução do Google está chegando</h2>
             </hgroup>
             <figure>
-                <img id="icone" src="_imagens/glass-oculos-preto-peq.png" />
+                <img id="icone" src="_imagens/multimidia.png" />
                 <figcaption></figcaption>
             </figure>
             <nav id="menu">
@@ -26,7 +27,7 @@
                         onmouseout="mudaFoto('_imagens/multimidia.png')">
                         <a href="index.html" target="_self">Home</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
+                    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"
                         onmouseout="mudaFoto('_imagens/multimidia.png')">
                         <a href="specs.html" target="_self">Especificações</a>
                     </li>
@@ -46,15 +47,32 @@
             </nav>
         </header>
 
-        Google Glass A revolução do Google está chegando [AQUI ENTRA UMA FOTO]
-        Menu Principal - Home - Especificações - Fotos - Multimídia - Fale conosco
-        Glass > Multimídia Sons e Vídeos por Matheus Costa Atualizado em
-        19/11/2020 Áudio e Vídeo [AQUI ENTRA UM VÍDEO] [AQUI ENTRA UM ÁUDIO]
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-do-artigo">
+                    <hgroup>
+                        <h3>Glass > Multimidia</h3>
+                        <h1>Sons e Vídeos</h1>
+                        <h2>por Matheus Costa</h2>
+                        <h3 class="direita">Atualizado em 21/11/2020</h3>
+                    </hgroup>
+                </header>
+                <div id="tv-radio"></div>
+                <audio id="musica" controls="controls">
+                    <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+                    Desculpe, mas mão foi possível carregar o áudio
+                </audio>
+                <video></video>
+                    <iframe id="filme" width="560" height="315" src="https://www.youtube.com/embed/4EvNxWhskf8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </video>
+                
+            </article>
+        </section>
 
         <footer id="rodape">
             <p>
                 Copyright 2020 - by Matheus Costa<br />
-                <a href="https://github.com/matheuscosta2" target="_blank">GitHub</a>
+                <a href="https://github.com/matheuscosta2" target="_blank">GitHub</a> | 
                 <a href="https://www.linkedin.com/in/matheus-manuel-costa-sousa-santos-057b6519b/"
                     target="_blank">Linkedin</a>
             </p>
