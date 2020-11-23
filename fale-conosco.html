@@ -22,44 +22,133 @@
             <nav id="menu">
                 <h1>Menu Principal</h1>
                 <ul>
-                    <li onmouseover="mudaFoto('_imagens/home.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')">
+                    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')">
                         <a href="index.html" target="_self">Home</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')">
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')">
                         <a href="specs.html" target="_self">Especificações</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/fotos.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')">
+                    <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')">
                         <a href="fotos.html" target="_self">Fotos</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/multimidia.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')">
+                    <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')">
                         <a href="multimidia.html" target="_self">Multimídia</a>
                     </li>
-                    <li onmouseover="mudaFoto('_imagens/contato.png')"
-                        onmouseout="mudaFoto('_imagens/contato.png')">
+                    <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')">
                         <a href="fale-conosco.html" target="_self">Fale conosco</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-do-artigo">
+                    <hgroup>
+                        <h3>Fale Conosco > Contato</h3>
+                        <h1>Formulário de Contato</h1>
+                        <h2>por Matheus Costa</h2>
+                        <h3 class="direita">Atualizado em 21/11/2020</h3>
+                    </hgroup>
+                </header>
 
-        Fale Conosco > Contato Formulário de Contato por Matheus Costa Atualizado
-        em 19/11/2020 Identificação do Usuário Nome: Senha: E-mail: Sexo: -
-        Masculino - Feminino Data de Nascimento: Endereço do Usuário Logradouro:
-        Número: Estado: Cidade: Mensagem do Usuário Grau de Urgência: Mensagem:
-        Quero um Google Glass Gostaria de adquirir um Google Glass quando
-        disponível Cor: Quantidade: Preço Total: R$ [BOTÃO ENVIAR]
-        <footer id="rodape">
-            <p>
-                Copyright 2020 - by Matheus Costa<br />
-                <a href="https://github.com/matheuscosta2" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/matheus-manuel-costa-sousa-santos-057b6519b/"
-                    target="_blank">Linkedin</a>
-            </p>
-        </footer>
+                <form method="POST" id="fContato" action="mailto:matheus.costa@jgppo@gmail.com">
+                    <fieldset id="usuario">
+                        <legend>Identificação do Usuário</legend> Quero um Google Glass
+                        <p><label for="cNome">Nome </label><input type="text" name="tNome" id="cNome" size="20"
+                                maxlength="30" placeholder="Nome Completo"></p>
+                        <p><label for="cSenha">Senha</label> <input type="password" name="tSenha" id="cSenha" size="8"
+                                maxlength="8" placeholder="8 dígitos"> </p>
+                        <p><label for="cEmail">E-mail</label> <input type="email" name="tEmail" id="cEmail" size="20"
+                                maxlength="40" placeholder="Ex. exemplo@email.com"></p>
+                        <fieldset id="sexo">
+                            <legend>Sexo:</legend>
+                            <input type="radio" name="tSexo" id="cMasc"> <label for="cMasc">Masculino</label><br />
+                            <input type="radio" name="tSexo" id="cFem"> <label for="cFem">Feminino</label>
+                        </fieldset>
+                        <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>
+                    </fieldset>
+            </article>
+            <fieldset id="endereco">
+                <legend>Endereço do Usuário</legend>
+                <p><label for="cRua">Logradouro </label><input type="text" name="tRua" id="cRua" size="20"
+                        maxlength="70" placeholder="Ex.Rua, Avenida, Travessa"></p>
+                <p><label for="cNum">Número </label><input type="number" name="tNum" id="cNum" min="0" max="9999"
+                        maxlength="4" placeholder="Ex.1234"></p>
+                <p><label for="cEst">Estado</label>
+                    <select name="tEst" id="cEst">
+
+                        <optgroup label="Região Norte">
+                            <option value="AM">Amazonas</option>
+                            <option value="RR">Roraima</option>
+                            <option value="AP">Amapá</option>
+                            <option value="PA">Pará</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="AC">Acre</option>
+                        </optgroup>
+
+
+                        <optgroup label="Região Nordeste">
+                            <option value="MA">Maranhão</option>
+                            <option value="CE">Ceará</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RN">Rio Grande do Norte</opton>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="BA">Bahia</option>
+                        </optgroup>
+
+
+                        <optgroup label="Região Centro-Oeste">
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="GO">Goiás</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+
+                        <optgroup label="Região Sul"> 
+                            <option value="PR">Paraná</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="SC">Santa Catarina</option>
+                        </optgroup>>
+
+                    </select>
+                </p>
+                <p><label for="cCid">Cidade</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="20"
+                        placeholder="Ex.Salvador, Cabo Frio"> </p>
+            </fieldset>
+
+            <fieldset id="mensagem">
+                <legend>Mensagem do Usuário</legend>
+                Grau de Urgência:
+                Mensagem:
+            </fieldset>
+
+            <fieldset id="pedido">
+                <legend>Quero um Google Glass</legend>
+                <p><label for="cUrg">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                <p><label for="cCor">Cor</label></p>
+                <p><label for="cQtd">Quantidade</label> </p>
+                <p><label for="cTot">Preço Total R$</label></p>
+            </fieldset>
+            [BOTÃO ENVIAR]
+            </form>
+            <footer id="rodape">
+                <p>
+                    Copyright 2020 - by Matheus Costa<br />
+                    <a href="https://github.com/matheuscosta2" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/matheus-manuel-costa-sousa-santos-057b6519b/"
+                        target="_blank">Linkedin</a>
+                </p>
+            </footer>
     </div>
 </body>
 
