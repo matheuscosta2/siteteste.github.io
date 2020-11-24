@@ -5,8 +5,17 @@
     <meta charset="UTF-8" />
     <title>Tudo Sobre Google Glass</title>
     <link rel="stylesheet" type="text/css" href="_css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="_css/form.css" />
+    <script language="javascript" src="_javascript/funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd*1500;
+            document.getElementById("cTot").value = tot;
+        }
+    </script>
 </head>
-<script language="javascript" src="_javascript/funcoes.js"></script>
+
 
 <body>
     <div id="interface">
@@ -51,7 +60,7 @@
                     </hgroup>
                 </header>
 
-                <form method="POST" id="fContato" action="mailto:matheus.costa@jgppo@gmail.com">
+                <form method="POST" id="fContato" action="mailto:matheus.costa@jgppo@gmail.com" oninput="calc_total();">
                     <fieldset id="usuario">
                         <legend>Identificação do Usuário</legend> Quero um Google Glass
                         <p><label for="cNome">Nome </label><input type="text" name="tNome" id="cNome" size="20"
@@ -67,7 +76,6 @@
                         </fieldset>
                         <p>Data de Nascimento:<input type="date" name="tNasc" id="cNasc"></p>
                     </fieldset>
-            </article>
             <fieldset id="endereco">
                 <legend>Endereço do Usuário</legend>
                 <p><label for="cRua">Logradouro </label><input type="text" name="tRua" id="cRua" size="20"
@@ -136,20 +144,27 @@
                 Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
                 </p>
                 <p><label for="cMsg">Mensagem
-                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
                 </label>
                 </p>
             </fieldset>
 
             <fieldset id="pedido">
                 <legend>Quero um Google Glass</legend>
-                <p><label for="cUrg">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                <p><label for="cCor">Cor</label></p>
-                <p><label for="cQtd">Quantidade</label> </p>
-                <p><label for="cTot">Preço Total R$</label></p>
+                <p><input type="checkbox" name="tped" id="cPed" checked><label for="cUrg">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                <p><label for="cCor">Cor</label>
+                <input type="color" name="tCor" id="cCor" value="#0000FF">
+                </p>
+                <p><label for="cQtd">Quantidade</label>
+                <input type="number" name="tQtd" id="cQtd" min="0" max="5" value="0">
+                </p>
+                <p><label for="cTot">Preço Total R$</label>
+                <input type="text" name="tTot" id="cTot" placeholder="Total a Pagar" readonly></p>
             </fieldset>
-            [BOTÃO ENVIAR]
+            <input type="image" src="_imagens/botao-enviar.png">
             </form>
+        </article>
+        </section>
             <footer id="rodape">
                 <p>
                     Copyright 2020 - by Matheus Costa<br />
