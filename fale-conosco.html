@@ -121,14 +121,24 @@
 
                     </select>
                 </p>
-                <p><label for="cCid">Cidade</label> <input type="text" name="tCid" id="cCid" size="20" maxlength="20"
-                        placeholder="Ex.Salvador, Cabo Frio"> </p>
+                <p><label for="cCid">Cidade</label><input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua cidade" list="cidades"></p>
+                <datalist id="cidades">
+                    <option value="Rio de Janeiro"></option>
+                    <option value="Nova Iguaçu"></option>
+                    <option value="Niteroi"></option>
+                    <option value="Belford Roxo"></option>
+                </datalist>
             </fieldset>
 
             <fieldset id="mensagem">
                 <legend>Mensagem do Usuário</legend>
-                Grau de Urgência:
-                Mensagem:
+                <p><label for="cUrg">Grau de Urgência</label>
+                Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="1">Máx
+                </p>
+                <p><label for="cMsg">Mensagem
+                <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui sua mensagem"></textarea>
+                </label>
+                </p>
             </fieldset>
 
             <fieldset id="pedido">
