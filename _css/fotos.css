@@ -8,6 +8,7 @@ ul#album-fotos {
     list-style: none;
 }
 
+
 ul#album-fotos li span {
     opacity: 0;
     color: #ffffff;

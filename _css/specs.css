@@ -12,6 +12,7 @@ iframe#frame-spec {
     overflow: hidden;
 }
 
+
 iframe#frame-spec::-webkit-scrollbar {
     display: none;
 }
