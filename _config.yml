@@ -1,6 +1,6 @@
 lsi: false
 safe: true
-source: ./website_teste_html_css_js
+source: /website_teste_html_css_js
 incremental: false
 highlighter: rouge
 gist:
